@@ -1,0 +1,34 @@
+=== wp-amaps-plugin ===
+Contributors: rccoder
+Tags: map, amaps
+Donate link: http://www.rccoder.net
+Requires at least: 1.0
+Tested up to: 4.3.1
+Stable tag: trunk
+License: GPL 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+基于高德地图的WordPress插件
+
+== Description ==
+基于高德地图的WordPress插件，利用短代码可以在任何你想插入地图的地方插入有标记的地图。支持自定义尺寸大小,自定义其他描述
+
+== Installation ==
+
+`[amaps id='myid' w='100px' h='100px' lon='126.633286' lat='45.747425' address='哈尔滨工业大学一校区' info='这是一个很好的大学']`
+Or
+`[amaps lon='126.633286' lat='45.747425' address='哈尔滨工业大学一校区' info='这是一个很好的大学']`
+Or
+`[amaps address='哈尔滨工业大学一校区' info='这是一个很好的大学']`
+Or
+`[amaps lon='126.633286' lat='45.747425' info='这是一个很好的大学']`
+Or
+`[amaps address='哈尔滨工业大学一校区']`
+
+with `id`, you can customize style for map
+
+with `w` and `h`, you can customize weight and height for map
+
+== Changelog ==
+= 1.0 =
+* Initial release.

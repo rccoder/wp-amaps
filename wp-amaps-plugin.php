@@ -49,21 +49,16 @@ function wp_amaps_content_init($atts, $content = null) {
     $address = $address ? $address : false;
     $info = $info ? $info : false;
 
+    $str1 = '<div class="wp_amaps" style="weight: '.$w.'; height: '.$h.'"><div id="'.$id.'"><div id="container"></div><div><div>';
+    $str2 = '<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/><script src="http://webapi.amap.com/maps?v=1.3&key=8ef1ddfea330aa3124a11f4aeaac187e"></script><script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script><style type="text/css">.amap-icon img {margin: 0 !important;}.amap-marker-label {border: 2px solid #f5f5f5;background-color: #f5f5f5;padding-right: 20px;}</style><script>var map = new AMap.Map("container", {resizeEnable: true,center: [';
+    $str3 = '],zoom: 13});var marker = new AMap.Marker({position: map.getCenter()});marker.setMap(map);marker.setTitle("';
+    $str4 = '");marker.setLabel({offset: new AMap.Pixel(20, 20),content: "';
+    $str5 = '"});</script>';
+
     if (($lon && $lat) || $address) {
-        $output = '<div class="wp_amaps" style="weight: '.$w.'; height: '.$h.'"><div id=">'.$id.'"><div id="container"></div><div><div>';
-        $output .= '
-            <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
-            <script src="http://webapi.amap.com/maps?v=1.3&key=8ef1ddfea330aa3124a11f4aeaac187e"></script>
-            <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
-            <style type="text/css">
-                .amap-icon img {
-                    margin: 0 !important;
-                }
-            </style>
-            <script>
-                var map = new AMap.Map("container", {
-                    resizeEnable: true,
-                    center: [';
+        $output = $str1;
+        $output .= $str2;
+
         if($lon && $lat) {
             $output .= $lon.','.$lat;
             if (! $address) {
@@ -77,28 +72,18 @@ function wp_amaps_content_init($atts, $content = null) {
             $tep = $tep->geocodes[0]->location;
             $output .= $tep;
         }
-        $output .= '],
-                    zoom: 13
-                });
-                var marker = new AMap.Marker({
-                    position: map.getCenter()
-                });
-                marker.setMap(map);
-                marker.setTitle("';
+
+        $output .= $str3;
         $output .= $address;
-        $output .= '");
-                marker.setLabel({
-                    offset: new AMap.Pixel(20, 20),
-                    content: "';
+        $output .= $str4;
+
         if ($info) {
             $output .= $info;
         } else {
             $output .= $address;
         }
-        $output .= '"
-                });
-            </script>
-        ';
+        
+        $output .= $str5;
         return $output;
     }
 }

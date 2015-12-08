@@ -1,4 +1,4 @@
-# wp-amaps-plugin
+# wp-amaps
 A WordPress Plugin Powered By [Amaps](http://ditu.amap.com/)
 
 ![show](./screenshot.png)
@@ -30,7 +30,7 @@ with `id`, you can customize style for map
 with `w` and `h`, you can customize weight and height for map
 
 ## Issues
-If you have any question, you can click [Issues](https://github.com/rccoder/wp-amaps-plugin/issues) and open a new Issues.
+If you have any question, you can click [Issues](https://github.com/rccoder/wp-amaps/issues) and open a new Issues.
 
 ## Version
 1.0

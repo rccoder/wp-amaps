@@ -1,4 +1,4 @@
-=== wp-amaps-plugin ===
+=== wp-amaps ===
 Contributors: rccoder
 Tags: map, amaps
 Donate link: http://www.rccoder.net
@@ -32,3 +32,5 @@ with `w` and `h`, you can customize weight and height for map
 == Changelog ==
 = 1.0 =
 * Initial release.
+= 1.1 =
+* Change the Name (From wp-amaps-plugin to wp-amaps)

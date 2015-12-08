@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: wp_amaps_plugin
-Plugin URI: https://github.com/rccoder/wp-amaps-plugin
+Plugin Name: wp_amaps
+Plugin URI: https://github.com/rccoder/wp-amaps
 Description: 基于高德地图的WordPress插件，利用短代码可以在任何你想插入地图的地方插入有标记的地图。支持自定义尺寸大小,自定义其他描述
-Version: 1.0
+Version: 1.1
 Author: rccoder
 Author URI: http://www.rccoder.net
 Copyright 2015  rccoder  (email : rccoder.net@gmail.com)

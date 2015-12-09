@@ -32,5 +32,14 @@ with `w` and `h`, you can customize weight and height for map
 ## Issues
 If you have any question, you can click [Issues](https://github.com/rccoder/wp-amaps/issues) and open a new Issues.
 
+## Download
+[wp-amaps](https://wordpress.org/plugins/wp-amaps/)
+
 ## Version
-1.0
+* 1.0
+* 1.2
+* 1.3
+* 1.4
+* 1.5
+* 1.6
+* 1.7
